@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>BootstrapFetch</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=896192cc65e20f1fcc6d792b5b9a4626">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery-baguetteBox.min.css?h=3175ea2a373db4ce2aec072db96e7473">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Bootstrap Studio - Pixabay API Call</h2>
+        <form>
+            <div class="row">
+                <div class="col"><label class="form-label form-label" for="Search_Term">Search Term</label><input class="form-control" type="text" id="Search_Term" value="vietnam field"></div>
+                <div class="col">
+                    <div id="Help_Prompt" class="form-text"></div><label class="form-label form-label" for="Image_Type">Image Type</label><select class="form-select get_on_change" id="Image_Type">
+                        <option value="all">All</option>
+                        <option value="photo">Photo</option>
+                        <option value="illustration">Illustration</option>
+                        <option value="vector">Vector</option>
+                    </select>
+                </div>
+                <div class="col"><label class="form-label form-label" for="Orientation">Orientation</label><select class="form-select get_on_change" id="Orientation">
+                        <option value="all">All</option>
+                        <option value="horizontal">Horizontal</option>
+                        <option value="vertical">Vertical</option>
+                    </select></div>
+                <div class="col"><label class="form-label form-label" for="API_Key">API Key&nbsp;&nbsp;</label><a href="https://pixabay.com/api/docs/#api_search_images" target="_blank">Get one here</a><input class="form-control get_on_change" type="text" id="API_Key"></div>
+                <div class="col"><label class="form-label form-label" for="Orientation">Page</label><select class="form-select get_on_change" id="Page">
+                        <option value="1">1</option>
+                    </select></div>
+                <div class="col d-xl-flex justify-content-xl-center align-items-xl-center"><button class="btn btn-primary" id="btn_get_images" type="submit">Get Images</button></div>
+            </div>
+        </form>
+        <h6>Result:&nbsp;<span id="status"></span></h6>
+        <div class="row">
+            <div class="col">
+                <div class="text-center">
+                    <section class="photo-gallery">
+                        <div class="container">
+                            <div class="row gx-2 gy-2 row-cols-1 row-cols-md-2 row-cols-xl-3 photos" id="photos" data-bss-baguettebox="" ata-bss-baguettebox="">
+                                <div class="col item"><a href="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"><img class="img-fluid" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"></a></div>
+                                <div class="col item"><a href="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"><img class="img-fluid" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"></a></div>
+                                <div class="col item"><a href="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"><img class="img-fluid" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"></a></div>
+                                <div class="col item"><a href="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"><img class="img-fluid" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"></a></div>
+                                <div class="col item"><a href="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"><img class="img-fluid" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"></a></div>
+                                <div class="col item"><a href="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"><img class="img-fluid" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"></a></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js?h=a52d057774a957ffc5c4e3aabf79520a"></script>
+    <script src="assets/js/imagesloaded.pkgd.js?h=2174642c85dc27915a4120f7dbc1ad31"></script>
+    <script src="assets/js/masonry.pkgd.min.js?h=520e46df77727aaf3d5e799ef241be02"></script>
+    <script src="assets/js/Lightbox-Gallery-baguetteBox.min.js?h=add865daffd8b6e10264279f48d8ac50"></script>
+    <script src="assets/js/script.js?h=f2644a348525549cf5c040ea88da6f4c"></script>
+</body>
+
+</html>
