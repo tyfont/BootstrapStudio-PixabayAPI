@@ -7,7 +7,7 @@
   + Image Type
   + Orientation
   + Page
-
+(.bsdesign file included)
 ### Demo: https://bootstrapstudio-pixabayapi.netlify.app
 
 ### Screenshot:
