@@ -9,3 +9,4 @@
 
 
 Demo: https://bootstrapstudio-pixabayapi.netlify.app
+![Screenshot](https://github.com/tyfont/BootstrapStudio-PixabayAPI/blob/master/screenshot.png?raw=true)
