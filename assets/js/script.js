@@ -45,11 +45,11 @@ function FetchImages(){
 				imagesLoaded( document.querySelector('.photos'), function( instance ) {
 					var msnry = new Masonry( '.photos', {"percentPosition": true });
 					msnry.layout();
+					console.log('images loaded');
 				});
 				UpdatePages(data.totalHits,PerPage,Page);
-				document.getElementById("status").innerHTML	=	`found ${data.totalHits} images, you are on page ${Page} `;
 			}else{
-				document.getElementById("status").innerHTML	=	"found no image";
+				console.log("found no image");
 			}
 			
 		})
@@ -61,9 +61,8 @@ function UpdatePages(totalHits,per_page,current_page){
 	let totalPage = totalHits / per_page;
 	var page_selecting	=	document.getElementById('Page');
 	page_selecting.innerHTML = "";
-	for (var i = 0; i<(totalPage+1); i++){
-		page_selecting[i] = new Option(i+1, i+1, i==(current_page-1), i==(current_page-1));	
-		
+	for (var i = 1; i<=(totalPage+1); i++){
+		page_selecting[i] = new Option(i, i, i==current_page, i==current_page);		
 	}
 
 }
